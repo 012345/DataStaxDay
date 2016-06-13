@@ -305,7 +305,7 @@ Note- if you get a bind error do this:
 
 ```export SPARK_LOCAL_IP=\`ip add|grep inet|grep global|awk '{ print $2 }'|cut -d '/' -f 1\` ```
 
->Notice the spark.ui.port flag - Because we are on a shared cluster, we need to specify a radom port so we don't clash with other users. We're also setting max cores = 1 or else one job will hog all the resources. 
+>Notice the spark.ui.port flag - Because we are on a shared cluster, we need to specify a random port so we don't clash with other users. We're also setting max cores = 1 or else one job will hog all the resources. 
 
 Try some CQL commands
 
